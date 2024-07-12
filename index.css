@@ -262,16 +262,17 @@ footer a {
     transition-duration: 100ms;
 }
 
-.icons1:hover{
+.icons1:hover {
     transform: scale(1.8);
 }
 
-.link{
+.link {
     transition-property: all;
     transition-duration: 100ms;
 
 }
-.link:hover{
+
+.link:hover {
     color: white;
     text-decoration: none;
 }
@@ -290,10 +291,10 @@ footer a {
 
 /* media queries small screens */
 
-@media screen and (min-width: 500px) and (max-width: 750px) {
+@media screen and (min-width: 375px) and (max-width: 750px) {
 
     .header-card {
-        background-image: url("./images/mobile/image-header.jpg");
+        background-image: url("https://images.pexels.com/photos/23499711/pexels-photo-23499711/free-photo-of-a-sunset-over-the-mountains-with-clouds-and-fog.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
