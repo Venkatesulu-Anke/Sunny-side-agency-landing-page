@@ -15,9 +15,7 @@
 }
 
 .vvvv {
-    /* font-family: barlow; */
     font-family: Fraunces;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-weight: 700;
 
 }
@@ -25,9 +23,8 @@
 .header-card {
     background-image: url("./images/desktop/image-header.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 120vh;
 }
 
 .nav-items {
@@ -53,9 +50,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* text-align: center; */
-
-    margin-top: 50px;
+    margin-top: 1px;
 }
 
 .main-head {
@@ -70,7 +65,6 @@
     font-size: 80px;
     letter-spacing: 5px;
     font-family: barlow;
-    /* font-family: Fraunces; */
     font-weight: 700;
 }
 
@@ -136,9 +130,8 @@
     background-image: url("./images/desktop/image-graphic-design.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
     text-align: center;
-    width: 50%;
 }
 
 .image1 p {
@@ -150,10 +143,8 @@
     background-image: url("./images/desktop/image-photography.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50vw;
-    height: 100vh;
+    background-position: center;
     text-align: center;
-    width: 50%;
 }
 
 .image2 p {
@@ -211,7 +202,6 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    /* flex-wrap: wrap; */
     margin-left: 5px;
 }
 
@@ -259,22 +249,19 @@ footer a {
     padding-top: 60px;
 
     transition-property: all;
-    transition-duration: 100ms;
+    transition-duration: 1s;
 }
 
 .icons1:hover {
     transform: scale(1.8);
 }
 
-.link {
-    transition-property: all;
-    transition-duration: 100ms;
-
-}
-
 .link:hover {
-    color: white;
+    color: blue;
     text-decoration: none;
+
+    transition-property: all;
+    transition-duration: 1ms;
 }
 
 .name {
@@ -286,19 +273,16 @@ footer a {
 
 
 
-
-
-
+/* Responsive for mobile screens */
 /* media queries small screens */
 
 @media screen and (min-width: 375px) and (max-width: 750px) {
 
     .header-card {
-        background-image: url("https://images.pexels.com/photos/23499711/pexels-photo-23499711/free-photo-of-a-sunset-over-the-mountains-with-clouds-and-fog.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-image: url("./images/mobile/image-header.jpg");
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
-        width: 100vw;
-        height: 120vh;
     }
 
     .main-head1 {
@@ -312,10 +296,8 @@ footer a {
         text-align: center;
         display: flex;
         flex-direction: row;
-        /* justify-content: center; */
         align-items: center;
-        /* margin-top: 130px; */
-        margin-top: 130px;
+        margin-top: 50px;
     }
 
 
@@ -386,8 +368,6 @@ footer a {
     }
 
 
-
-
     .fruit-card {
         width: 100vw;
         display: flex;
@@ -397,10 +377,9 @@ footer a {
     .image1 {
         background-image: url("./images/mobile/image-graphic-design.jpg");
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
-        height: 100vh;
         text-align: center;
-        width: 100%;
     }
 
     .image1 p {
@@ -412,11 +391,9 @@ footer a {
         background-image: url("./images/mobile/image-photography.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 50vw;
-        height: 100vh;
+        background-position: center;
         text-align: center;
     }
-
 
     .image2 p {
         margin-top: 30px;
@@ -429,8 +406,7 @@ footer a {
         text-align: center;
     }
 
-
-    /* .word {
+    .word {
         text-align: center;
         margin-top: 120px;
         letter-spacing: 10px;
@@ -446,7 +422,7 @@ footer a {
 
     .container h6 {
         margin-top: 60px;
-    } */
+    }
 
     .big {
         color: hsl(168, 34%, 41%);
@@ -466,16 +442,14 @@ footer a {
         margin-left: -20px;
     }
 
-    /* footer {
+    footer {
         background-color: rgb(214, 214, 214);
-        height: 260px;
+        height: 70vh;
         color: hsl(168, 34%, 41%);
     }
 
     footer h4 {
         text-align: center;
-        padding-top: 50px;
-        padding-bottom: 10px;
     }
 
     .anchor {
@@ -489,115 +463,34 @@ footer a {
     }
 
     .icons {
+        margin-top: 10px;
         text-align: center;
     }
 
     .icons1 {
-        padding: 10px;
+        padding: 20px;
         padding-top: 60px;
-    } */
+
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    .icons1:hover {
+        transform: scale(1.8);
+    }
+
+    .link:hover {
+        color: blue;
+        text-decoration: none;
+
+        transition-property: all;
+        transition-duration: 1ms;
+    }
+
+    .name {
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+    }
 
 }
-
-
-
-/* 
-@media screen and (min-width: 1080px) {
-    .header-card {
-        background-image: url("./images/desktop/image-header.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-
-    }
-
-    .box-container {
-        height: 100vh;
-        width: 100vw;
-    }
-    
-    .box {
-        display: flex;
-        width: 100vw;
-    }
-    
-    .para {
-        width: 50%;
-        height: 70vh;
-        padding-left: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 18px;
-    }
-    
-    .para1 {
-        padding: 10px;
-        width: 80%;
-    }
-    
-    .para p {
-        margin-top: 20px;
-        color: hsl(168, 34%, 41%);
-    }
-    
-    .img-card {
-        width: 50vw;
-        margin-left: -15px;
-    }
-    
-    .img1 {
-        width: 50vw;
-        height: 70vh;
-    }
-    
-    .img2 {
-        width: 50vw;
-        height: 70vh;
-    }
-    
-
-
-    .fruit-card {
-        width: 100vw;
-    }
-    
-    .image1 {
-        background-image: url("./images/desktop/image-graphic-design.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 50vh;
-        text-align: center;
-        width: 100vw;
-    }
-    
-    .image1 p {
-        margin-top: 30px;
-        color: hsl(166, 24%, 14%);
-    }
-    
-    .image2 {
-        background-image: url("./images/desktop/image-photography.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 50vh;
-        text-align: center;
-        width: 50%;
-    }
-    
-    .image2 p {
-        margin-top: 30px;
-        color: hsl(166, 24%, 14%);
-    }
-    
-    .text1 {
-        margin-top: 200px;
-        font-size: 18px;
-    }
-    
-    
-    
-}  */
